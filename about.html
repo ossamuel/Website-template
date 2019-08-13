@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "description" content = "Welcome to my website">
+    <meta name = "keywords" content = "webdesign, portfolio, python, javascript">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Personal Website | About</title>
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Grenze|Merriweather+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Grenze|Merriweather+Sans|Rokkitt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+
+    <header>
+        <!-- navigation and showcase -->
+        
+
+        <nav id = navbar>
+            <div class="container">
+            
+                <a href="index.html">
+                    <img class = "logo" src="./img/logo.png" alt="some text" width=75 height=90/>
+                </a>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a class = "current-p" 
+                    href = "About.html">About</a></li>
+                    <li><a href = "index.html">Portfolio</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+    </header>
+    
+    <div class = 'about-structure'>
+        
+
+        <h2 class='h2styling'> <span class = 'specific'>/ About </span>Me</h2>
+        <p class = 'about-paragraph' style = "font-family: 'Cairo', sans-serif; font-size: 17px;">
+        In my younger and more vulnerable years my father gave me some advice that 
+        I've been turning over <br>in my mind ever since.
+         'Whenever you feel like criticizing anyone,' he told me, 
+        'just remember that all <br>the people in this world haven't had the advantages that you've had.'
+        </p>
+    </div>
+    <div style="text-align:center;">
+        <button  id="showr">SHOW</button>
+        <button id="hidr">HIDE</button>
+    </div>
+    <main style="display: none" class="cards">
+        <article class="card">
+            <img src="./img/cardface.jpg" alt="Sample photo">
+            <div class="text">
+                <h3>Define</h3>
+                <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+            <button>View More</button>
+            </div>
+            
+        </article>
+        <article class="card">
+            <img src="./img/work.jpg" alt="Sample photo">
+            <div class="text">
+            <h3>Design</h3>
+            <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+            <button>View More</button>
+            </div>
+        </article>
+        <article class="card" >
+            <img src="./img/working.jpg" alt="Sample photo">
+            <div class="text">
+            <h3>Build</h3>
+            <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+            <button>View More</button>
+            </div>
+            
+        </article>
+        
+        <script>
+            $( "#showr" ).click(function() {
+                $( ".cards" ).first().show( "fast", function showNext() {
+                $( this ).next( ".cards" ).show( "100", showNext );
+                });
+            });
+                
+            $( "#hidr" ).click(function() {
+                $( ".cards" ).hide( 1000 );
+                
+            });
+        </script>
+        
+    
+    </main>
+
+                                                      <!-- card hover effect -->
+
+    <!-- <div class="maincontainer">
+    <div class="thecard">
+    
+
+    <div class="thefront">
+            <article class="card">
+                <img src="./img/back-card.jpg" alt="Sample photo">
+                <div class="text">
+                    <h3>Define</h3>
+                    <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+                    
+                </div>
+            </article>
+    </div>
+
+
+    <div class="theback">
+        <article class="card">
+            <img src="./img/awesome.jpg" alt="Sample photo">
+            <div class="text">
+                <p>Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas 
+                    facere animi explicabo
+                     non quis magni recusandae. </p>
+                
+            </div>
+        </article>
+    </div>
+
+    </div>
+    </div> -->
+
+
+    <!-- another card -->
+    
+            
+    <!-- anothercard end -->
+                                                    <!-- card hover effect end -->
+
+    <div class="flex-container">
+        <P>Isaac Samuel, Programmer, Edmonton, Alberta, AB</P>
+        <nav id = container1>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/ogo-samuel-91ba2575" target="_blank">
+                        <img class = "linkedin" src="./img/linkedin.png" alt="some text" width=75 height=90/>
+                    </a></li>
+                    <li><a href="index.html" target="_blank">
+                        <img class = "github" src="./img/github.png" alt="some text" width=75 height=90/>
+                    </a></li>
+                    <li><a href="index.html" target="_blank">
+                        <img class = "twitter" src="./img/twitter.png" alt="some text" width=75 height=90/>
+                    </a></li>
+                    <li><a href="index.html" target="_blank">
+                        <img class = "facebook" src="./img/facebook.png" alt="some text" width=75 height=90/>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "description" content = "Welcome to my website">
+    <meta name = "keywords" content = "webdesign, portfolio, python, javascript">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact Page</title>
+    <script src="https://kit.fontawesome.com/b626da46ad.js"></script>
+</head>
+<body>
+    <header>
+        <!-- navigation and showcase -->
+        
+        <nav id = navbar>
+            <div class="container">
+            
+                <a href="index.html">
+                    <img class = "logo" src="./img/logo.png" alt="some text" width=75 height=90/>
+                </a>
+                <ul>
+                    <li><a class = "current-p" href = "index.html">Home</a></li>
+                    <li><a href = "About.html">About</a></li>
+                    <li><a href = "index.html">Portfolio</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class = 'flexing'>
+        <div class = 'leftside'>
+            <h2>Hello There</h2>
+            <h2>Contact Me Below</h2>
+            <p>Feel free to get in touch with me. Iam always open<br> to discussing new projects,
+                creative ideas or opportunities <br>
+                to be part of your vision
+            </p>
+            <h5>Email Me</h5>
+            <p>OgoSamuel9@gmail.com</p>
+            <h5>Feel like talking</h5>
+            <p>587-501-5212</p>
+            <div class = 'social-p'>
+                <a href="https://www.linkedin.com/in/ogo-samuel-91ba2575" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/ogo-samuel-91ba2575" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.github.com/ossamuel" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ogo-samuel-91ba2575" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        
+        <div class = 'right-side'>
+            <form action="send_mail.php"></form>
+                <div>
+                    <label for="name"></label><br>
+                    <input type="text" id = "name" name = "first_name" style="width: 250px;" placeholder = "Name" max-length = "35" required/>
+                    
+                    <label for="email"></label><br>
+                    <input type="email" name = "email_address" id = "email" style="width: 250px;" placeholder = "Email" required/>
+
+                    <label for="message"></label><br>
+                    <textarea name="comments" id="message" style="width: 250px; " placeholder="message" cols="30" rows="10" required></textarea>
+
+                    <button class = 'submit' value = "Submit" type = "submit"> submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="flex-container">
+        <P>Isaac Samuel, Programmer, Edmonton, Alberta, AB</P>
+        <nav id = container1>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/ogo-samuel-91ba2575" target="_blank">
+                        <img class = "linkedin" src="./img/linkedin.png" alt="some text" width=75 height=90/>
+                    </a></li>
+                    <li><a href="index.html" target="_blank">
+                        <img class = "github" src="./img/github.png" alt="some text" width=75 height=90/>
+                    </a></li>
+                    <li><a href="index.html" target="_blank">
+                        <img class = "twitter" src="./img/twitter.png" alt="some text" width=75 height=90/>
+                    </a></li>
+                    <li><a href="index.html" target="_blank">
+                        <img class = "facebook" src="./img/facebook.png" alt="some text" width=75 height=90/>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+   
+</body>
+</html>
