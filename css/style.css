@@ -1,0 +1,508 @@
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilities class */
+
+.container{
+    margin: auto;
+    max-width: 1100;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.socials{
+    margin: auto;
+    max-width: 1100;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.text-primary{
+    color: rgb(252, 96, 96);
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    border-radius: 24px;
+    border: 3.4px solid rgb(252, 96, 96);
+    padding-top: 10px;
+    width: 200px;
+    height: 60px; 
+    font-family: 'Rokkitt', serif;
+}
+
+.logo-1{
+    height: 82px;
+    padding-left: 28px; 
+}
+
+.btn:hover{
+    background-color: rgb(252, 96, 96);
+    
+    
+}
+
+
+
+/* Main style(body, links, paragraphs, headings-(no class or id) */
+
+html, body{
+    
+    line-height: 1.8em;
+    
+}
+a{
+    color: #333;
+    text-decoration:none;
+}
+
+h1, h2, h3{
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+/* navigation bar */
+
+#navbar{
+    background: white;
+    color: black;
+    overflow: auto;
+
+}
+
+#navbar a{
+    color: black;
+    
+}
+
+#navbar h1{
+    float: left;
+    padding: 20px 10px;
+    padding-left: 40px;
+}
+
+
+#navbar ul{
+    float: right;
+    list-style: none;
+    padding-left: 10px;
+}
+
+#container1 ul{
+    float: right;
+    list-style: none;
+    padding-left: 10px;
+}
+#container1 .socials ul li{
+    padding: 14px 10px;
+    padding-bottom: 27px;
+}
+
+#navbar ul li{
+    float: left;
+}
+
+#container1 ul li{
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+  
+}
+
+#container ul li a{
+    display: block;
+    padding: 20px;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 18px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current-p{
+    background: white;
+    color: rgb(252, 96, 96);
+    
+}
+
+/* pic-view */
+#pic-view{
+    background: url('../img/back-img.jpg') no-repeat 
+    center center/cover;
+    height: 600px;
+}
+
+#pic-view .pic-view-content{
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+}
+
+#pic-view .pic-view-content h1{
+    font-size: 40px;
+    line-height: 1.35em;
+}
+
+#pic-view .pic-view-content p{
+    padding-bottom: 24px;
+}
+.font-change{
+    font-size: 20px;
+    font-family: 'Grenze', serif;
+}
+
+
+.blue-square-container {
+    text-align: right;
+}
+
+.blue-square{
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 42px;
+}
+
+.facebook{
+    display:block;
+    clear:both;
+    width: 28px;
+    height: 26px;
+}
+
+
+.github{
+    display:block;
+    clear:both;
+    width: 28px;
+    height: 26px;
+}
+.twitter{
+    display:block;
+    clear:both;
+    width: 28px;
+    height: 26px;
+}
+
+.linkedin{
+    display:block;
+    clear:both;
+    width: 30px;
+    height: 30px;
+   
+}
+
+
+
+/* fgfg */
+
+.flex-container{
+    border-style: unset;
+}
+.flex-container p{
+    padding-left: 40px;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#buttons{
+    float:right;
+    position:relative;
+    left:-50%;
+    text-align:left;
+}
+#buttons ul{
+    list-style:none;
+    position:relative;
+    left:50%;
+}
+
+#buttons li{float:left;position:relative;}/* ie needs position:relative here*/
+
+#buttons a{
+    text-decoration:none;
+    margin:10px;
+    background:red;
+    float:left;
+    border:2px outset blue;
+    color:#fff;
+    padding:2px 5px;
+    text-align:center;
+    white-space:nowrap;
+}
+#buttons a:hover{ border:2px inset blue;color:red;background:#f2f2f2;}
+#content{overflow:hidden}/* hide horizontal scrollbar*/
+
+
+
+/* About page styling */
+
+
+
+.foot-change{
+    width: 25%;
+    overflow: auto;
+    padding-left: 40px;  
+    
+}
+
+
+
+
+.logo2{
+    height: 48px;
+    width: 44px;
+    display: block;
+}
+
+.flex-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    
+}
+
+.flex-container p{
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.about-structure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.maincontainer{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/* holds the two card elements(fron and back) and control hover */
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+/* front div */
+.thefront{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    color: #333;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+
+
+
+/* shows when user hovers over card */
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+
+/* another card */
+
+
+/* holds the two card elements(fron and back) and control hover */
+.cards {
+    display: flex;
+    
+    flex-direction: row;
+    text-align:center;
+    margin:0px auto;
+    width: 400px;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center; /*centers items on the cross-axis (y by default)*/
+}
+.card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    
+} 
+.card img {
+    max-width: 100%;
+    max-height: 60%;
+}
+.card .text {
+    padding: 0 15px 15px;
+}
+.card .text > button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding: 10px;
+    width: 100%;
+}
+
+.cards p{
+    font-family: 'Crimson Text', serif;
+}
+.specific{
+    color: rgb(252, 96, 96);
+}
+/* another  card end */
+
+.numberCircle {
+    border-radius: 50%;
+    
+    /* remove if you don't care about IE8 */
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 16px Arial, sans-serif;
+}
+
+@media(min-width: 1200px){
+    h1{
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 800px){
+    h1{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 500px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+}
+
+
+.h2styling{
+    color: #FFFFFF;
+    background: #FFFFFF;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+}
+
+
+
+#hidr{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-color:rgb(252, 96, 96);
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#showr{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-color:rgb(252, 96, 96);
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* contact page styling */
+
+.leftside{
+    
+
+}
+
+.pa{
+    float: right;
+}
+
+.social-p{
+    word-spacing: 20px;
+}
+
+.right-side{
+    padding-left: 30px;
+    padding-top: 100px;
+}
+    
+
+.submit{
+    display: block;
+    
+    color: white;
+    background-color: rgb(252, 96, 96);
+    
+    border:  solid rgb(252, 96, 96);
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    font-family: 'Rokkitt', serif;
+    cursor: pointer;
+}
+
+input[type="text"]::placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: center; 
+} 
+
+input[type="email"]::placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: center; 
+} 
+
+.flexing{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
